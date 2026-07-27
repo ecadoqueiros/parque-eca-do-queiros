@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios · Eca do Queiros</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="nav-brand" href="index.html">Eca do Queiros</a>
+    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Conócenos</a></li>
+      <li><a href="anuncios.html">Anuncios/Novedades</a></li>
+      <li><a href="actividades.html">Eventos/Actividades</a></li>
+      <li><a href="servicios.html" class="active">Servicios</a></li>
+      <li><a href="historia.html">Historia/Testimonios</a></li>
+      <li><a href="mantenimiento.html">Mantenimiento</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" style="padding-bottom:40px;">
+  <div class="container">
+    <h1 style="font-size:2.4rem;">Servicios</h1>
+    <p class="lead">Servicios que dan vida al parque y ayudan a sostener su mantenimiento cotidiano.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="grid">
+
+      <!-- ECOBLOQUE -->
+      <div class="card">
+        <div class="photo-placeholder">📸 Foto pendiente:<br>área de recepción / contenedores del Ecobloque</div>
+        <div class="card-body">
+          <div class="card-icon">♻️</div>
+          <h3>Ecobloque</h3>
+          <p>Recepción de materiales limpios para apoyar prácticas de aprovechamiento responsable.</p>
+          <div class="info-box pending">
+            <span class="pending-tag">Falta info</span>
+            <p style="margin:0;"><strong>Horario de recepción:</strong> — <br>
+            <strong>Materiales aceptados:</strong> — </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- VIVERO -->
+      <div class="card">
+        <div class="photo-placeholder">📸 Foto pendiente:<br>plantas y productos del vivero</div>
+        <div class="card-body">
+          <div class="card-icon">🌿</div>
+          <h3>Vivero</h3>
+          <p>Plantas, árboles y productos para cuidar espacios verdes dentro y fuera del parque.</p>
+          <div class="info-box pending">
+            <span class="pending-tag">Falta info</span>
+            <p style="margin:0;"><strong>Precios reales:</strong> por definir</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CAFETERÍA -->
+      <div class="card">
+        <div class="photo-placeholder">📸 Foto pendiente:<br>bebidas / espacio de la cafetería</div>
+        <div class="card-body">
+          <div class="card-icon">☕</div>
+          <h3>Cafetería</h3>
+          <p>Un punto de pausa para convivir, tomar algo y seguir disfrutando el parque.</p>
+          <div class="info-box pending">
+            <span class="pending-tag">Falta info</span>
+            <p style="margin:0;"><strong>Menú:</strong> — <br><strong>Horario:</strong> — </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SALÓN DE USOS MÚLTIPLES -->
+      <div class="card">
+        <div class="photo-placeholder">📸 Foto pendiente:<br>salón de usos múltiples</div>
+        <div class="card-body">
+          <div class="card-icon">👥</div>
+          <h3>Salón de usos múltiples</h3>
+          <p>Un espacio comunitario para encuentros, talleres y reuniones vecinales.</p>
+          <div class="info-box pending">
+            <span class="pending-tag">Falta info</span>
+            <p style="margin:0;"><strong>Medidas:</strong> — <br><strong>Horarios:</strong> — <br><strong>Costo/donación:</strong> — </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== LOMBRICOMPOSTA ===================== -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <h2>Lombricomposta</h2>
+      <p>Proceso vivo para transformar residuos orgánicos en nutrientes para el suelo.</p>
+    </div>
+    <div class="grid" style="grid-template-columns: 1fr 1fr;">
+      <div class="photo-placeholder">📸 Foto/video pendiente:<br>proceso de composta con lombriz</div>
+      <div class="info-box pending">
+        <span class="pending-tag">Falta info</span>
+        <p style="margin:0;"><strong>Precio:</strong> por definir</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== INVENTARIO DEL VIVERO (base de datos embebida) ===================== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>Inventario del Vivero</h2>
+      <p>Disponibilidad actualizada de plantas y productos.</p>
+    </div>
+
+    <!--
+      ======================================================================
+      CÓMO CONECTAR ESTA TABLA A GOOGLE SHEETS (para quien edite el sitio):
+
+      1. Crea una hoja de Google Sheets con columnas:
+         Producto | Precio | Unidades disponibles | Foto (link)
+      2. Ve a Archivo → Compartir → Publicar en la web.
+      3. Elige la hoja y el formato "Página web", da clic en Publicar.
+      4. Copia el link que te da Google y pégalo como el "src" del iframe
+         de abajo, reemplazando PEGA_AQUI_EL_LINK_DE_GOOGLE_SHEETS.
+      5. Guarda el archivo. La tabla se actualizará sola cada vez que
+         alguien edite la hoja de Sheets — no hay que tocar este código de nuevo.
+      ======================================================================
+    -->
+    <div class="embed-wrap">
+      <iframe
+        src="PEGA_AQUI_EL_LINK_DE_GOOGLE_SHEETS"
+        title="Inventario del vivero"
+        height="420"
+        loading="lazy">
+      </iframe>
+    </div>
+    <p style="text-align:center; font-size:0.85rem; margin-top:10px;">
+      ⚠️ Esta tabla todavía no está conectada — sigue las instrucciones en el código fuente (comentario arriba) para vincular el Google Sheets del inventario.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <h3>Contacto</h3>
+    <div class="footer-grid">
+      <div class="footer-item"><span class="label">Instagram</span>@eca_do_queiros</div>
+      <div class="footer-item"><span class="label">Facebook</span>Eca Do Queiros Parque</div>
+      <div class="footer-item"><span class="label">WhatsApp</span>+52 1 33 2360 9703</div>
+      <div class="footer-item"><span class="label">WhatsApp</span>33 3673 1570</div>
+      <div class="footer-item"><span class="label">Correo</span>colonos.jardinesuniversidad@ejemplo.com</div>
+    </div>
+    <div class="footer-bottom">Área Natural Protegida Eca do Queiros · Zapopan, Jalisco</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
