@@ -6,4 +6,11 @@ document.addEventListener('DOMContentLoaded', function () {
       links.classList.toggle('open');
     });
   }
+
+  document.querySelectorAll('.card-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var card = btn.closest('.card');
+      if (card) card.classList.toggle('open');
+    });
+  });
 });
