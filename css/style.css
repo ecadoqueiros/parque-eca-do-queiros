@@ -63,7 +63,7 @@ a { color: inherit; }
   padding: 0 24px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   height: 64px;
 }
 .nav-brand {
