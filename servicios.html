@@ -29,7 +29,7 @@
 <header class="hero" style="padding-bottom:40px;">
   <div class="container">
     <h1 style="font-size:2.4rem;">Servicios</h1>
-    <p class="lead">Servicios que dan vida al parque y ayudan a sostener su mantenimiento cotidiano.</p>
+    <p class="lead">Servicios que dan vida al parque y ayudan a sostener su mantenimiento cotidiano. Da clic en cada uno para ver más detalles.</p>
   </div>
 </header>
 
@@ -44,10 +44,23 @@
           <div class="card-icon">♻️</div>
           <h3>Ecobloque</h3>
           <p>Recepción de materiales limpios para apoyar prácticas de aprovechamiento responsable.</p>
-          <div class="info-box pending">
-            <span class="pending-tag">Falta info</span>
-            <p style="margin:0;"><strong>Horario de recepción:</strong> — <br>
-            <strong>Materiales aceptados:</strong> — </p>
+
+          <button class="card-toggle">Ver horario y materiales aceptados <span class="chevron">▾</span></button>
+          <div class="card-details">
+            <div class="card-details-inner">
+              <p><strong>Horario:</strong> Martes a sábado, 8:00 am – 4:00 pm</p>
+              <p><strong>Materiales aceptados:</strong></p>
+              <ul>
+                <li>Plástico</li>
+                <li>Tapas de plástico</li>
+                <li>Papel</li>
+                <li>Cartón</li>
+                <li>Metales</li>
+                <li>Empaques flexibles (envolturas)</li>
+                <li>Textiles</li>
+                <li>Colillas</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -59,9 +72,15 @@
           <div class="card-icon">🌿</div>
           <h3>Vivero</h3>
           <p>Plantas, árboles y productos para cuidar espacios verdes dentro y fuera del parque.</p>
-          <div class="info-box pending">
-            <span class="pending-tag">Falta info</span>
-            <p style="margin:0;"><strong>Precios reales:</strong> por definir</p>
+
+          <button class="card-toggle">Ver horario <span class="chevron">▾</span></button>
+          <div class="card-details">
+            <div class="card-details-inner">
+              <p><strong>Horario:</strong><br>
+              Lunes a viernes: 9:00 am – 3:00 pm<br>
+              Sábados: 9:00 am – 7:00 pm</p>
+              <p>La variedad de plantas disponibles cambia seguido — contáctanos para conocer las existencias actuales.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -73,9 +92,25 @@
           <div class="card-icon">☕</div>
           <h3>Cafetería</h3>
           <p>Un punto de pausa para convivir, tomar algo y seguir disfrutando el parque.</p>
-          <div class="info-box pending">
-            <span class="pending-tag">Falta info</span>
-            <p style="margin:0;"><strong>Menú:</strong> — <br><strong>Horario:</strong> — </p>
+
+          <button class="card-toggle">Ver horario y menú <span class="chevron">▾</span></button>
+          <div class="card-details">
+            <div class="card-details-inner">
+              <p><strong>Horario:</strong> Sábados de 9:00 am a 7:00 pm</p>
+              <p><strong>Menú:</strong></p>
+              <ul class="menu-list">
+                <li><span>Americano</span><span class="price">$50</span></li>
+                <li><span>Espresso</span><span class="price">$50</span></li>
+                <li><span>Latte</span><span class="price">$60</span></li>
+                <li><span>Matcha</span><span class="price">$70</span></li>
+                <li><span>Achicoria</span><span class="price">$50</span></li>
+                <li><span>Té</span><span class="price">$20</span></li>
+                <li><span>Café de olla</span><span class="price">$50</span></li>
+                <li><span>Agua de cacao</span><span class="price">$50</span></li>
+                <li><span>Agua natural</span><span class="price">$20</span></li>
+                <li><span>Tacos de canasta</span><span class="price">$15</span></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -87,9 +122,14 @@
           <div class="card-icon">👥</div>
           <h3>Salón de usos múltiples</h3>
           <p>Un espacio comunitario para encuentros, talleres y reuniones vecinales.</p>
-          <div class="info-box pending">
-            <span class="pending-tag">Falta info</span>
-            <p style="margin:0;"><strong>Medidas:</strong> — <br><strong>Horarios:</strong> — <br><strong>Costo/donación:</strong> — </p>
+
+          <button class="card-toggle">Ver información de renta <span class="chevron">▾</span></button>
+          <div class="card-details">
+            <div class="card-details-inner">
+              <p>Se renta a cambio de una donación.</p>
+              <p><strong>Para más información y disponibilidad:</strong><br>
+              WhatsApp: <a href="https://wa.me/523336731570" target="_blank" rel="noopener">+52 33 3673 1570</a></p>
+            </div>
           </div>
         </div>
       </div>
@@ -107,47 +147,27 @@
     </div>
     <div class="grid" style="grid-template-columns: 1fr 1fr;">
       <div class="photo-placeholder">📸 Foto/video pendiente:<br>proceso de composta con lombriz</div>
-      <div class="info-box pending">
-        <span class="pending-tag">Falta info</span>
-        <p style="margin:0;"><strong>Precio:</strong> por definir</p>
+      <div class="card" style="border:none; box-shadow:none;">
+        <div class="card-body" style="padding:0;">
+          <button class="card-toggle">Ver precios y más información <span class="chevron">▾</span></button>
+          <div class="card-details">
+            <div class="card-details-inner">
+              <p><strong>Precios:</strong></p>
+              <ul class="menu-list">
+                <li><span>5 kg</span><span class="price">$100</span></li>
+                <li><span>10 kg</span><span class="price">$200</span></li>
+                <li><span>20 kg</span><span class="price">$380</span></li>
+              </ul>
+              <p><strong>Para comprar, contáctanos:</strong><br>
+              WhatsApp: <a href="https://wa.me/523323609703" target="_blank" rel="noopener">33 2360 9703</a><br>
+              Teléfono: 33 3673 1570</p>
+              <p>Es un abono orgánico completo, un mejorador de la estructura del suelo y un estimulante para el crecimiento de las plantas. Aporta nutrientes esenciales, mejora la retención de humedad y activa los microorganismos benéficos del suelo.</p>
+              <p><strong>Apto para:</strong> pasto, flores, macetas y árboles.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ===================== INVENTARIO DEL VIVERO (base de datos embebida) ===================== -->
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <h2>Inventario del Vivero</h2>
-      <p>Disponibilidad actualizada de plantas y productos.</p>
-    </div>
-
-    <!--
-      ======================================================================
-      CÓMO CONECTAR ESTA TABLA A GOOGLE SHEETS (para quien edite el sitio):
-
-      1. Crea una hoja de Google Sheets con columnas:
-         Producto | Precio | Unidades disponibles | Foto (link)
-      2. Ve a Archivo → Compartir → Publicar en la web.
-      3. Elige la hoja y el formato "Página web", da clic en Publicar.
-      4. Copia el link que te da Google y pégalo como el "src" del iframe
-         de abajo, reemplazando PEGA_AQUI_EL_LINK_DE_GOOGLE_SHEETS.
-      5. Guarda el archivo. La tabla se actualizará sola cada vez que
-         alguien edite la hoja de Sheets — no hay que tocar este código de nuevo.
-      ======================================================================
-    -->
-    <div class="embed-wrap">
-      <iframe
-        src="PEGA_AQUI_EL_LINK_DE_GOOGLE_SHEETS"
-        title="Inventario del vivero"
-        height="420"
-        loading="lazy">
-      </iframe>
-    </div>
-    <p style="text-align:center; font-size:0.85rem; margin-top:10px;">
-      ⚠️ Esta tabla todavía no está conectada — sigue las instrucciones en el código fuente (comentario arriba) para vincular el Google Sheets del inventario.
-    </p>
   </div>
 </section>
 
@@ -157,7 +177,7 @@
     <div class="footer-grid">
       <div class="footer-item"><span class="label">Instagram</span>@eca_do_queiros</div>
       <div class="footer-item"><span class="label">Facebook</span>Eca Do Queiros Parque</div>
-      <div class="footer-item"><span class="label">WhatsApp</span>+52 33 3673 1570</div>
+      <div class="footer-item"><span class="label">WhatsApp</span>33 3673 1570</div>
       <div class="footer-item"><span class="label">Correo</span>colonos.jardinesuniversidad@ejemplo.com</div>
     </div>
     <div class="social-icons">
