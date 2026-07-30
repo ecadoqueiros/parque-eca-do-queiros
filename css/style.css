@@ -439,13 +439,15 @@ footer h3 { color: var(--white); font-size: 1.1rem; }
   aspect-ratio: 4 / 3;
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--green-pale);
   display: block;
 }
 .gallery-grid img {
   aspect-ratio: 4 / 3;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--green-pale);
   border-radius: var(--radius);
   display: block;
   box-shadow: var(--shadow);
