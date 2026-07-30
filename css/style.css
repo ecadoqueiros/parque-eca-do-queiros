@@ -416,3 +416,20 @@ footer h3 { color: var(--white); font-size: 1.1rem; }
   margin-bottom: 12px;
 }
 .back-link:hover { text-decoration: underline; }
+
+/* ---------- Fotos reales (reemplazan a .photo-placeholder) ---------- */
+.card-photo {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.gallery-grid img {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+  display: block;
+  box-shadow: var(--shadow);
+}
