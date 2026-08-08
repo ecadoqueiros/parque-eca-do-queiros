@@ -1,88 +1,62 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mantenimiento · Eca do Queiros</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+# Sitio web — Área Natural Protegida Eca do Queiros
 
-<nav class="navbar">
-  <div class="nav-inner">
-    <a class="nav-brand" href="index.html">Eca do Queiros</a>
-    <button class="nav-toggle" aria-label="Abrir menú">☰</button>
-    <ul class="nav-links">
-      <li><a href="index.html">Conócenos</a></li>
-      <li><a href="anuncios.html">Anuncios/Novedades</a></li>
-      <li><a href="actividades.html">Eventos/Actividades</a></li>
-      <li><a href="servicios.html">Servicios</a></li>
-      <li><a href="historia.html">Historia/Testimonios</a></li>
-      <li><a href="mantenimiento.html" class="active">Mantenimiento</a></li>
-      <li><a href="galeria.html">Galería</a></li>
-    </ul>
-  </div>
-</nav>
+Este sitio es HTML/CSS/JS plano: **no depende de ninguna plataforma externa**  para poder editarse. Cualquier persona puede abrir estos archivos con un editor de texto (o directamente en GitHub) y cambiarlos.
 
-<header class="hero" style="padding-bottom:40px;">
-  <div class="container">
-    <h1 style="font-size:2.4rem;">Mantenimiento</h1>
-    <p class="lead">El trabajo constante que mantiene el parque en buen estado.</p>
-  </div>
-</header>
+## Páginas del sitio
+```
+index.html            → Inicio (Conócenos)
+servicios.html         → Lista de servicios (con links a cada uno)
+ecobloque.html          → Detalle: Ecobloque
+vivero.html             → Detalle: Vivero
+cafeteria.html          → Detalle: Cafetería
+salon.html              → Detalle: Salón de usos múltiples
+lombricomposta.html     → Detalle: Lombricomposta
+actividades.html        → Eventos/Actividades + embeds de Instagram
+historia.html            → Historia, testimonios, quién mantiene el parque
+galeria.html            → Galería de fotos
+apoyar.html             → Cómo apoyar al parque (fotógrafos, donaciones, etc.)
+css/style.css           → Todos los estilos (colores, tipografías, tarjetas, etc.)
+js/main.js              → Menú móvil, tarjetas expandibles y el lightbox de fotos
+img/                    → Fotos reales del parque
+```
 
-<section class="section">
-  <div class="container">
-    <div class="grid">
-      <div class="card">
-        <div class="photo-placeholder">📸 Foto pendiente: limpieza de residuos</div>
-        <div class="card-body">
-          <h3>Limpieza general de residuos</h3>
-          <p>Retiro constante de residuos para que el parque siga siendo habitable para todos.</p>
-        </div>
-      </div>
+## Cómo publicarlo / dónde vive
+El sitio se publica gratis con **GitHub Pages** directo desde este repositorio (rama `main`). No requiere ninguna cuenta externa ni se puede "bloquear" por inactividad, a diferencia de la versión anterior hecha en Lovable.
 
-      <!-- EDITAR: agrega más tareas reales (riego, poda, etc.) copiando este bloque .card -->
-      <div class="card">
-        <div class="photo-placeholder">📸 Foto pendiente: riego de áreas verdes</div>
-        <div class="card-body">
-          <span class="pending-tag">Falta info</span>
-          <h3>Riego</h3>
-          <p>Reemplaza este texto con la descripción real de esta tarea de mantenimiento.</p>
-        </div>
-      </div>
+**Settings → Pages** dentro del repositorio muestra el link publicado y el estado de la última actualización.
 
-      <div class="card">
-        <div class="photo-placeholder">📸 Foto pendiente: poda de árboles y arbustos</div>
-        <div class="card-body">
-          <span class="pending-tag">Falta info</span>
-          <h3>Poda</h3>
-          <p>Reemplaza este texto con la descripción real de esta tarea de mantenimiento.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+## Cómo editar contenido (sin saber programar)
 
-<footer>
-  <div class="container">
-    <h3>Contacto</h3>
-    <div class="footer-grid">
-      <div class="footer-item"><span class="label">Instagram</span>@eca_do_queiros</div>
-      <div class="footer-item"><span class="label">Facebook</span>Eca Do Queiros Parque</div>
-      <div class="footer-item"><span class="label">WhatsApp</span>+52 1 33 2360 9703</div>
-      <div class="footer-item"><span class="label">WhatsApp</span>33 3673 1570</div>
-      <div class="footer-item"><span class="label">Correo</span>colonos.jardinesuniversidad@ejemplo.com</div>
-    </div>
-    <div class="footer-bottom">Área Natural Protegida Eca do Queiros · Zapopan, Jalisco</div>
-  </div>
-</footer>
+1. Abre el archivo `.html` de la sección que quieras cambiar (ej. `servicios.html`)
+2. Busca el texto que quieres cambiar — está escrito tal cual, entre las etiquetas (ej. `<p>Este texto se ve en la página</p>`)
+3. Cambia solo el texto entre las etiquetas, sin borrar los símbolos `< >`
+4. Guarda el archivo y súbelo de nuevo a GitHub, o edítalo directo en la web de GitHub con el lápiz ✏️ que aparece al ver el archivo
+5. **Commit changes**
 
-<script src="js/main.js"></script>
-</body>
-</html>  
+## Pendientes marcados en el sitio
 
+Busca estas señales dentro del código — indican qué falta por completar:
+- Cajas punteadas verdes con **"📸 Foto pendiente"** → reemplazar por una foto real (ver siguiente sección)
+- Etiquetas amarillas **"Falta info"** → reemplazar el texto de ejemplo por información real
+- Comentarios en el código (`<!-- EDITAR: ... -->`) → instrucciones específicas de qué hacer ahí
 
- 
+## Cómo agregar una foto real
+
+1. Sube la imagen a la carpeta `img/` (Add file → Upload files, o Create new file y pega el contenido si el arrastre no respeta la carpeta)
+2. Busca el bloque `<div class="photo-placeholder">...</div>` que quieras reemplazar
+3. Cámbialo por: `<img class="card-photo" src="img/nombre-del-archivo.jpg" alt="Descripción de la foto">`
+4. Para fotos en las páginas de detalle de cada servicio, agrega también la clase `photo-detail` para que se vea más chica y centrada: `class="card-photo photo-detail"`
+5. Al hacer clic en cualquier foto real ya subida, se abre en grande automáticamente (función de "lightbox" ya incluida en `js/main.js`)
+
+## Conectar un post de Instagram (en Eventos/Actividades)
+
+1. Abre el post en Instagram → ⋯ → Insertar/Embed
+2. Copia el código que te da (empieza con `<blockquote class="instagram-media">`)
+3. Pégalo dentro de uno de los recuadros de la sección "Desde Instagram" en `actividades.html`
+4. Deja el `<script async src="https://www.instagram.com/embed.js"></script>` **una sola vez**, al final de esa sección — no lo dupliques
+
+## Administración del repositorio
+
+Este repositorio vive bajo una organización de GitHub (no una cuenta personal), para que no dependa de ninguna persona en particular y el parque tenga control total. Cualquier Owner de la organización puede agregar o quitar administradores desde **People** en la página de la organización.
+Done
+Cómo aplicarlo
